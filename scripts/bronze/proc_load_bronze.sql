@@ -24,7 +24,7 @@ DECLARE
     end_time TIMESTAMP;
     batch_start_time TIMESTAMP;
     batch_end_time TIMESTAMP;
-	 rows_loaded INTEGER;
+	rows_loaded INTEGER;
 BEGIN
     batch_start_time := CURRENT_TIMESTAMP;
 
