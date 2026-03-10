@@ -48,12 +48,11 @@ BEGIN
     CSV HEADER;
 	
 	GET DIAGNOSTICS rows_loaded = ROW_COUNT;
-
     RAISE NOTICE 'Rows inserted: %', rows_loaded;
 
     end_time := CURRENT_TIMESTAMP;
     RAISE NOTICE '>> Load Duration: % seconds',
-        EXTRACT(EPOCH FROM (end_time - start_time));
+    EXTRACT(EPOCH FROM (end_time - start_time));
 
     RAISE NOTICE '>> -------------';
 
@@ -69,12 +68,11 @@ BEGIN
     CSV HEADER;
 	
 	GET DIAGNOSTICS rows_loaded = ROW_COUNT;
-
     RAISE NOTICE 'Rows inserted: %', rows_loaded;
 
     end_time := CURRENT_TIMESTAMP;
     RAISE NOTICE '>> Load Duration: % seconds',
-        EXTRACT(EPOCH FROM (end_time - start_time));
+    EXTRACT(EPOCH FROM (end_time - start_time));
 
     RAISE NOTICE '>> -------------';
 
@@ -90,12 +88,11 @@ BEGIN
     CSV HEADER;
 	
 	GET DIAGNOSTICS rows_loaded = ROW_COUNT;
-
     RAISE NOTICE 'Rows inserted: %', rows_loaded;
 
     end_time := CURRENT_TIMESTAMP;
     RAISE NOTICE '>> Load Duration: % seconds',
-        EXTRACT(EPOCH FROM (end_time - start_time));
+    EXTRACT(EPOCH FROM (end_time - start_time));
 
     RAISE NOTICE '>> -------------';
 
@@ -115,12 +112,11 @@ BEGIN
     CSV HEADER;
 	
 	GET DIAGNOSTICS rows_loaded = ROW_COUNT;
-
     RAISE NOTICE 'Rows inserted: %', rows_loaded;
 
     end_time := CURRENT_TIMESTAMP;
     RAISE NOTICE '>> Load Duration: % seconds',
-        EXTRACT(EPOCH FROM (end_time - start_time));
+    EXTRACT(EPOCH FROM (end_time - start_time));
 
     RAISE NOTICE '>> -------------';
 
@@ -136,13 +132,12 @@ BEGIN
     CSV HEADER;
 	
 	GET DIAGNOSTICS rows_loaded = ROW_COUNT;
-
     RAISE NOTICE 'Rows inserted: %', rows_loaded;
 
 
     end_time := CURRENT_TIMESTAMP;
     RAISE NOTICE '>> Load Duration: % seconds',
-        EXTRACT(EPOCH FROM (end_time - start_time));
+    EXTRACT(EPOCH FROM (end_time - start_time));
 
     RAISE NOTICE '>> -------------';
 
@@ -158,19 +153,18 @@ BEGIN
     CSV HEADER;
 	
 	GET DIAGNOSTICS rows_loaded = ROW_COUNT;
-
     RAISE NOTICE 'Rows inserted: %', rows_loaded;
 
     end_time := CURRENT_TIMESTAMP;
     RAISE NOTICE '>> Load Duration: % seconds',
-        EXTRACT(EPOCH FROM (end_time - start_time));
+    EXTRACT(EPOCH FROM (end_time - start_time));
 
     batch_end_time := CURRENT_TIMESTAMP;
 
     RAISE NOTICE '==========================================';
     RAISE NOTICE 'Loading Bronze Layer is Completed';
     RAISE NOTICE 'Total Load Duration: % seconds',
-        EXTRACT(EPOCH FROM (batch_end_time - batch_start_time));
+    EXTRACT(EPOCH FROM (batch_end_time - batch_start_time));
     RAISE NOTICE '==========================================';
 
 EXCEPTION
